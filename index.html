@@ -25,11 +25,13 @@
         <a href="./index.html" class="logo"><span class="logo-item">Web</span>Studio</a>
         <nav>
           <ul class="nav-list">
-            <li class="nav-list-item"><a href="">Студія</a></li>
             <li class="nav-list-item">
-              <a href="./portfolio.html">Портфоліо</a>
+              <a class="nav-list-link" href="">Студія</a></li>
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="nav-list-item"><a href="">Контакти</a></li>
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="">Контакти</a></li>
           </ul>
         </nav>
       </div>
@@ -55,7 +57,7 @@
     <!--Хіро блок-->
     <section class="hero">
       <h1 class="main-text">Ефективні рішення для вашого бізнесу</h1>
-      <button type="button" class="main-button">Замовити послугу</button>
+      <button type="button" class="main-button" data-modal-open>Замовити послугу</button>
     </section>
     <!--Наші переваги-->
     <section class="about">
@@ -326,57 +328,57 @@
       <div class="clients-content container">
         <h2 class="tittle">Постійні клієнти</h2>
         <ul class="clients-list list">
-          <li class="clients-logo"> 
+          <li class="clients-logo">
             <a class="client-link" href="https://www.linkedin.com/" aria-label="linkedin" target="_blank"
-            rel="noopener norefferer">
+              rel="noopener norefferer">
 
-            <svg class="clients-icon" width="106" height="60">
-              <use href="./images/icons.svg#icon-Logo"></use>
-            </svg>
+              <svg class="clients-icon" width="106" height="60">
+                <use href="./images/icons.svg#icon-Logo"></use>
+              </svg>
             </a>
           </li>
           <li class="clients-logo">
             <a class="client-link" href="https://www.linkedin.com/" aria-label="linkedin" target="_blank"
-            rel="noopener norefferer">
+              rel="noopener norefferer">
 
-            <svg class="clients-icon" width="106" height="60">
-              <use href="./images/icons.svg#icon-Logo-1"></use>
-            </svg>
+              <svg class="clients-icon" width="106" height="60">
+                <use href="./images/icons.svg#icon-Logo-1"></use>
+              </svg>
             </a>
           </li>
           <li class="clients-logo">
             <a class="client-link" href="https://www.linkedin.com/" aria-label="linkedin" target="_blank"
-            rel="noopener norefferer">
+              rel="noopener norefferer">
 
-            <svg class="clients-icon" width="106" height="60">
-              <use href="./images/icons.svg#icon-Logo-2"></use>
-            </svg>
+              <svg class="clients-icon" width="106" height="60">
+                <use href="./images/icons.svg#icon-Logo-2"></use>
+              </svg>
             </a>
           </li>
           <li class="clients-logo">
             <a class="client-link" href="https://www.linkedin.com/" aria-label="linkedin" target="_blank"
-            rel="noopener norefferer">
+              rel="noopener norefferer">
 
-            <svg class="clients-icon" width="106" height="60">
-              <use href="./images/icons.svg#icon-Logo-3"></use>
-            </svg>
+              <svg class="clients-icon" width="106" height="60">
+                <use href="./images/icons.svg#icon-Logo-3"></use>
+              </svg>
             </a>
           </li>
-          <li class="clients-logo"><a class="client-link" href="https://www.linkedin.com/" aria-label="linkedin" target="_blank"
-            rel="noopener norefferer">
+          <li class="clients-logo"><a class="client-link" href="https://www.linkedin.com/" aria-label="linkedin"
+              target="_blank" rel="noopener norefferer">
 
-            <svg class="clients-icon" width="106" height="60">
-              <use href="./images/icons.svg#icon-Logo-4"></use>
-            </svg>
+              <svg class="clients-icon" width="106" height="60">
+                <use href="./images/icons.svg#icon-Logo-4"></use>
+              </svg>
             </a>
           </li>
           <li class="clients-logo">
             <a class="client-link" href="https://www.linkedin.com/" aria-label="linkedin" target="_blank"
-            rel="noopener norefferer">
+              rel="noopener norefferer">
 
-            <svg class="clients-icon" width="106" height="60">
-              <use href="./images/icons.svg#icon-Logo-5"></use>
-            </svg>
+              <svg class="clients-icon" width="106" height="60">
+                <use href="./images/icons.svg#icon-Logo-5"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -435,6 +437,18 @@
       </div>
     </div>
   </footer>
+<!--Modal-->
+  <div class="backdrop" data-modal>
+    <div class="modal">
+      <button class="modal-btn" data-modal-close>
+        <svg class="modal-icon" width="18" height="18">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+    </button>
+  </div>
+  </div>
+
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
