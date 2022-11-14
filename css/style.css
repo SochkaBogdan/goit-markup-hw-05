@@ -758,9 +758,9 @@ img {
   line-height: 1.55;
   letter-spacing: 0.03em;
 
-  transition: transform var(--anim-fast) ;
+  transition: transform var(--anim-fast);
 }
 
-.pf-cards:hover .overlay{
+.pf-cards:hover .overlay {
   transform: translateY(0);
 }
