@@ -126,7 +126,7 @@ img {
 .nav-list-link:focus:after {
   opacity: 1;
 
-  transform: translateX(-50%) scaleX(0.9);
+  transform: translateX(-50%) scaleX(1);
   transition: transform var(--main-anim);
 }
 
