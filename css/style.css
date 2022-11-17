@@ -102,6 +102,7 @@ img {
 .nav-list-link {
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: var(--main-anim);
 }
 
 .nav-list-link::after {
@@ -110,8 +111,6 @@ img {
   display: block;
 
   transform: translateX(-50%) scaleX(1);
-  transition: transform var(--main-anim),
-    opacity var(var(--main-anim));
 
   left: 50%;
   bottom: 0;
@@ -167,6 +166,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  transition: var(--main-anim);
+  -webkit-transition: var(--main-anim);
 }
 
 .nav-list-item a:focus {
@@ -175,6 +176,7 @@ img {
 
 .contact-list .contacts:hover {
   color: var(--accent-color);
+  transition: var(--main-anim);
 }
 
 .contact-list .contacts:focus {
@@ -238,12 +240,12 @@ img {
   color: var(--secondary-color);
   border: #2196f3;
   cursor: pointer;
+  transition: var(--main-anim);
 }
 
 .main-button:hover {
   border: #188ce8;
   background: #188ce8;
-  transition: var(--main-anim);
 }
 
 /*<!--Наші переваги-------------------------------------------->*/
@@ -322,11 +324,6 @@ img {
   overflow: hidden;
 }
 
-.work-tumb:hover .work-overlay {
-  opacity: 1;
-  transform: translateY(0);
-  transition: transform var(--slow-anim);
-}
 
 .work-overlay {
   display: block;
@@ -343,9 +340,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  opacity: 0;
-  transform: translateY(100%);
-  transition: transform var(--slow-anim), opacity var(--main-anim);
 
   padding-top: 27px;
   padding-bottom: 27px;
@@ -439,18 +433,20 @@ img {
 
 .team-link:hover,
 .team-link:focus {
-  transition: var(--main-anim);
   background: var(--accent-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .team-icons {
   fill: #AFB1B8;
+  
+  transition: var(--main-anim);
 }
 
 .team-link:hover .team-icons,
 .team-link:focus .team-icons {
   fill: var(--secondary-color);
+  
 }
 
 /* -----------CLIENTS */
@@ -488,6 +484,7 @@ img {
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+  transition: var(--main-anim);
 }
 
 .client-link:hover .clients-icon,
@@ -495,6 +492,7 @@ img {
   fill: #2196F3;
   border-radius: 4px;
   transition: var(--main-anim);
+  -webkit-transition: var(--main-anim);
 }
 
 .client-link:hover,
@@ -504,6 +502,7 @@ img {
 
 .clients-icon {
   fill: #AFB1B8;
+  transition: var(--main-anim);
 }
 
 
@@ -530,6 +529,7 @@ img {
 
 .footer-icons {
   fill: var(--secondary-color);
+  
 }
 
 .footer-list {
@@ -538,7 +538,7 @@ img {
 }
 
 .footer-link {
-  transition: var(--main-anim);
+  -webkit-transition: var(--main-anim);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -549,6 +549,7 @@ img {
 }
 
 .footer-link:hover {
+  transition: var(--main-anim);
   background: var(--accent-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -577,6 +578,8 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition: var(--main-anim);
+  -webkit-transition: var(--main-anim);
 }
 
 .footer .text {
@@ -584,6 +587,8 @@ img {
   font-style: normal;
   margin-bottom: 9px;
   cursor: pointer;
+  transition: var(--main-anim);
+  -webkit-transition: var(--main-anim);
 }
 
 .footer .text:hover {
@@ -705,11 +710,11 @@ img {
   color: var(--main-color);
   border: transparent;
   border-radius: 4px;
+  transition: var(--main-anim);
 }
 
 .portfolio-btn:hover {
 
-  transition: var(--main-anim);
 
   background-color: var(--accent-color);
   color: var(--secondary-color);
@@ -762,6 +767,7 @@ img {
 
 .pf-cards:hover {
   transition: var(--main-anim);
+  -webkit-transition: 3c linear;
   background: var(--secondary-color);
   border: 1px solid #EEEEEE;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -786,6 +792,7 @@ img {
   opacity: 0;
 
   transform: translateY(100%);
+  transition: var(--main-anim);
 
   align-items: center;
   justify-content: center;
@@ -803,7 +810,7 @@ img {
 .pf-cards:hover .overlay {
   opacity: 1;
   transform: translateY(0);
-  transition: var(--slow-anim), opacity var(--main-anim);
+  transition: var(--slow-anim), opacity var(--slow-anim);
 }
 
 
